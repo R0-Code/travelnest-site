@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2D4F4F">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><title>Feedback & Support — TravelNest</title>
+<meta name="description" content="Get in touch with TravelNest and browse common questions.">
+</head><body>
+<nav class="nav"><div class="nav-inner">
+<a href="index.html" class="logo"><img src="icons/logo.svg" alt="TravelNest logo" class="brand-logo">Travel<span>Nest</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="planner.html">Planner</a></li>
+<li><a href="random.html">Surprise</a></li>
+<li><a href="mood.html">Mood</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+<button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></nav>
+<section class="page-hero"><h1>Feedback & Support</h1><p>We'd love to hear from you.</p></section>
+<section class="section" style="padding-top:0"><div class="container">
+<div class="form-card reveal">
+<div class="success" id="fb-success"></div>
+<form id="feedback-form" novalidate>
+<div class="field"><label>Your Name</label><input type="text" name="name" placeholder="Jane Explorer"><div class="error" id="e-name"></div></div>
+<div class="field"><label>Email</label><input type="email" name="email" placeholder="you@example.com"><div class="error" id="e-email"></div></div>
+<div class="field"><label>Message</label><textarea name="message" placeholder="Tell us what's on your mind…"></textarea><div class="error" id="e-msg"></div></div>
+<button class="btn" type="submit" style="width:100%">Send Message</button>
+</form>
+</div>
+</div></section>
+
+<section class="section" style="background:#fff"><div class="container">
+<div class="section-head reveal"><span class="eyebrow">FAQ</span><h2>Frequently Asked</h2></div>
+<div class="faq reveal">
+<div class="faq-item"><div class="faq-q">Is TravelNest free to use?</div><div class="faq-a"><p>Yes — every feature on TravelNest is free. We're a discovery platform first.</p></div></div>
+<div class="faq-item"><div class="faq-q">Where is my data stored?</div><div class="faq-a"><p>Your saved budgets, wishlist, and feedback live in your browser's localStorage — nothing leaves your device.</p></div></div>
+<div class="faq-item"><div class="faq-q">Can I install TravelNest as an app?</div><div class="faq-a"><p>Absolutely. TravelNest is a Progressive Web App — add it to your home screen from your browser menu.</p></div></div>
+<div class="faq-item"><div class="faq-q">How are destinations chosen?</div><div class="faq-a"><p>Our team curates each destination by hand, focusing on cultural depth, natural beauty, and traveler value.</p></div></div>
+<div class="faq-item"><div class="faq-q">Can I suggest a destination?</div><div class="faq-a"><p>Yes — please use the form above and tell us where we should go next.</p></div></div>
+</div>
+</div></section>
+<footer><div class="container"><div class="footer-grid">
+<div><div class="logo" style="color:#fff"><img src="icons/logo.svg" alt="TravelNest logo" class="footer-logo">Travel<span>Nest</span></div><p style="opacity:.8;margin-top:.8rem;font-size:.92rem">Curated journeys for the modern explorer. Discover, plan, and dream.</p></div>
+<div><h4>Explore</h4><a href="destinations.html">Destinations</a><a href="planner.html">Trip Planner</a><a href="random.html">Surprise Me</a></div>
+<div><h4>Company</h4><a href="feedback.html">Contact</a><a href="mood.html">Travel Mood</a><a href="#">About</a></div>
+<div><h4>Newsletter</h4><p style="opacity:.8;font-size:.9rem">Weekly inspiration in your inbox.</p>
+<form id="newsletter-form" class="newsletter"><input type="email" placeholder="your@email.com" required><button type="submit">Join</button></form></div>
+</div><div class="footer-bottom">© 2026 TravelNest · Crafted for explorers</div></div></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script><script>initFeedback();</script>
+</body></html>

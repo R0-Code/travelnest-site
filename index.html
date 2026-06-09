@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2D4F4F">
+<link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><title>TravelNest — Curated Journeys for Modern Explorers</title>
+<meta name="description" content="Discover handpicked destinations, plan your trip budget, and find your travel mood with TravelNest.">
+</head><body>
+<nav class="nav"><div class="nav-inner">
+<a href="index.html" class="logo"><img src="icons/logo.svg" alt="TravelNest logo" class="brand-logo">Travel<span>Nest</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="planner.html">Planner</a></li>
+<li><a href="random.html">Surprise</a></li>
+<li><a href="mood.html">Mood</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+</ul>
+<button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></nav>
+<header class="hero"><div id="hero-stage"></div>
+<div class="hero-content"><h1>Wander Beautifully</h1>
+<p id="hero-quote">"The world is a book, and those who do not travel read only one page."</p>
+<p id="hero-author" style="font-size:.95rem;opacity:.85;margin-bottom:2rem">— Saint Augustine</p>
+<a href="destinations.html" class="btn">Start Exploring</a>
+<a href="planner.html" class="btn btn-outline" style="margin-left:.5rem;color:#fff;border-color:#fff">Plan a Trip</a></div>
+<div class="hero-dots" id="hero-dots"></div></header>
+
+<section class="section"><div class="container">
+<div class="section-head reveal"><span class="eyebrow">Featured Today</span><h2>A Destination, Daily</h2><p>A fresh corner of the world, hand-picked for you each day.</p></div>
+<div class="dotd reveal" id="dotd"></div>
+</div></section>
+
+<section class="section" style="background:#fff"><div class="container">
+<div class="section-head reveal"><span class="eyebrow">Why TravelNest</span><h2>Everything an Explorer Needs</h2></div>
+<div class="features">
+<div class="feature reveal"><div class="feature-icon">✈</div><h4>Curated Destinations</h4><p>Hand-selected places with deep, honest descriptions.</p></div>
+<div class="feature reveal"><div class="feature-icon">$</div><h4>Budget Planner</h4><p>Plan trips that match your wallet, not someone else's.</p></div>
+<div class="feature reveal"><div class="feature-icon">★</div><h4>Surprise Me</h4><p>Let serendipity choose your next adventure.</p></div>
+<div class="feature reveal"><div class="feature-icon">♪</div><h4>Travel Mood</h4><p>Ambient sounds to dream by — beach, forest, city.</p></div>
+</div></div></section>
+
+<footer><div class="container"><div class="footer-grid">
+<div><div class="logo" style="color:#fff"><img src="icons/logo.svg" alt="TravelNest logo" class="footer-logo">Travel<span>Nest</span></div><p style="opacity:.8;margin-top:.8rem;font-size:.92rem">Curated journeys for the modern explorer. Discover, plan, and dream.</p></div>
+<div><h4>Explore</h4><a href="destinations.html">Destinations</a><a href="planner.html">Trip Planner</a><a href="random.html">Surprise Me</a></div>
+<div><h4>Company</h4><a href="feedback.html">Contact</a><a href="mood.html">Travel Mood</a><a href="#">About</a></div>
+<div><h4>Newsletter</h4><p style="opacity:.8;font-size:.9rem">Weekly inspiration in your inbox.</p>
+<form id="newsletter-form" class="newsletter"><input type="email" placeholder="your@email.com" required><button type="submit">Join</button></form></div>
+</div><div class="footer-bottom">© 2026 TravelNest · Crafted for explorers</div></div></footer>
+<div class="modal" id="modal"><div class="modal-box" id="modal-body"></div></div>
+<script src="js/data.js"></script><script src="js/main.js"></script>
+<script>initHome();</script></body></html>
